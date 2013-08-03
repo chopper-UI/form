@@ -1,0 +1,20 @@
+{
+  "name": "form",
+  "description": "通用表单样式",
+  "version": "1.0.0",
+  "homepage": "https://github.com/chopper-UI/form",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chopper-UI/form.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chopper-UI/form/issues"
+  },
+  "family": "chopper",
+  "spm": {
+    "alias": {},
+    "output": [
+      "form.css"
+    ]
+  }
+}
