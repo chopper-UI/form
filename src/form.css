@@ -182,20 +182,20 @@ input:invalid, select:invalid {
 }
 
 /* 选中未通过html5验证的元素时的样式 */
-input:focus:invalid,
+/*input:focus:invalid,
 textarea:focus:invalid,
 select:focus:invalid {
     color: #b94a48;
     border-color: #ee5f5b;
-}
-input:focus:invalid:focus,
-textarea:focus:invalid:focus,
-select:focus:invalid:focus {
+}*/
+/*input:invalid:focus,
+textarea:invalid:focus,
+select:invalid:focus {
     border-color: #e9322d;
     -webkit-box-shadow: 0 0 6px #f8b9b7;
     -moz-box-shadow: 0 0 6px #f8b9b7;
     box-shadow: 0 0 6px #f8b9b7;
-}
+}*/
 
 
 .ui-form {
@@ -207,7 +207,7 @@ select:focus:invalid:focus {
     list-style: none;
 }
 
-.ui-form legend {
+.ui-form ui-form-legend {
     display: block;
     width: 100%;
     padding: 0;
@@ -253,7 +253,7 @@ select:focus:invalid:focus {
     text-align: right;
 }
 
-.ui-form-item-control{
+.ui-form .ui-form-item-control{
     display: block;
     width: 100%;
 }
