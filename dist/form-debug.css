@@ -254,9 +254,26 @@ select:invalid:focus {
     text-align: right;
 }
 
-.ui-form .ui-form-item-control{
+.ui-form .ui-form-item-field{
     display: block;
     width: 100%;
+}
+
+input.ui-form-large,
+select.ui-form-large{
+    padding: 14px;
+}
+input.ui-form-medium,
+select.ui-form-medium{
+    padding: 10px;
+}
+input.ui-form-small,
+select.ui-form-small{
+    width: 90px;
+}
+input.ui-form-mini,
+select.ui-form-mini{
+    width: 45px;
 }
 
 .ui-form-actions{
