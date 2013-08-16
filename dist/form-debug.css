@@ -102,7 +102,6 @@ select{
 }
 select,
 input[type="file"] {
-    height: 30px;
     line-height: 30px;
 }
 select[multiple],
@@ -211,6 +210,7 @@ select:invalid:focus {
     border: 0;
 }
 
+/* 统一input,select,textarea的高度 */
 .ui-form input,
 .ui-form select,
 .ui-form textarea{
@@ -224,33 +224,29 @@ select:invalid:focus {
     height: 14px;
 }
 
-/* 设置textarea */
+/* 设置textarea高度 */
 .ui-form textarea{
     height: auto;
 }
 
-/* 设置select */
-.ui-form select,
-.ui-form input[type="file"] {
-    height: 30px;
-}
+/* 设置select高度 */
 .ui-form select[multiple],
 .ui-form select[size] {
     height: auto;
 }
 
-.ui-form ui-form-legend {
-    display: block;
-    width: 100%;
-    padding: 0;
-    margin-bottom: 20px;
-    font-size: 21px;
-    line-height: 40px;
-    color: #333333;
-    border: 0;
-    border-bottom: 1px solid #e5e5e5;
-}
 .ui-form .ui-form-fieldset{
+    border: 1px solid #BBC7D2;
+    margin-bottom: 25px;
+    padding: 10px;
+}
+.ui-form .ui-form-fieldset legend{
+    padding: 0 10px;
+    margin-left: 10px;
+    font-size: 24px;
+}
+
+.ui-form > p{
     margin-bottom: 20px;
 }
 .ui-form fieldset > p{
@@ -267,6 +263,7 @@ select:invalid:focus {
     height: 0;
     clear: both;
 }
+
 [class*="ui-form-item-label"]{
     display: block;
     padding-top: 5px;
@@ -280,6 +277,14 @@ select:invalid:focus {
     width: 100%;
 }
 
+.ui-form-actions{
+    text-align: center;
+}
+.ui-form-actions button{
+    margin-right: 5px;
+}
+
+/** block size **/
 input.ui-form-large,
 select.ui-form-large{
     padding: 14px;
@@ -296,10 +301,4 @@ input.ui-form-mini,
 select.ui-form-mini{
     width: 45px;
 }
-
-.ui-form-actions{
-    text-align: center;
-}
-.ui-form-actions button{
-    margin-right: 5px;
-}
+/** endblock size **/
