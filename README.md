@@ -20,31 +20,33 @@ __注意：__示例中以.ex开头的class在实际使用场景中是不必要�
 ````html
 <form class="ui-form">
     <fieldset>
-        <label for="input_test">Label name</label>
-        <input id="input_test" type="text" name="" placeholder="Placeholder">
-        <select>
-            <option value="">Please Select One</option>
-            <option value="">A</option>
-            <option value="">B</option>
-            <option value="">C</option>
-        </select>
-        <label>
-            <input type="checkbox" name="" value=""> Check me out
-        </label>
-        <label>
-            <input type="radio" name="" value=""> Check me out
-        </label>
-    </fieldset>
-    <fieldset>
-        <input id="checkbox_test" type="checkbox" name="" value="">
-        <label for="checkbox_test">
-             Check me out
-        </label>
-        <input id="radio_test" type="radio" name="" value=""> 
-        <label for="radio_test">
-            Check me out
-        </label>
-        <textarea name=""></textarea>
+        <div class="ui-form-item">
+            <label for="input_test">Label name</label>
+            <input id="input_test" type="text" name="" placeholder="Placeholder">
+            <select>
+                <option value="">Please Select One</option>
+                <option value="">A</option>
+                <option value="">B</option>
+                <option value="">C</option>
+            </select>
+            <label>
+                <input type="checkbox" name="" value=""> Check me out
+            </label>
+            <label>
+                <input type="radio" name="" value=""> Check me out
+            </label>
+        </div>
+        <div class="ui-form-item">
+            <input id="checkbox_test" type="checkbox" name="" value="">
+            <label for="checkbox_test">
+                 Check me out
+            </label>
+            <input id="radio_test" type="radio" name="" value=""> 
+            <label for="radio_test">
+                Check me out
+            </label>
+            <textarea name=""></textarea>
+        </div>
     </fieldset>
 </form>
 ````
@@ -56,7 +58,7 @@ __注意：__示例中以.ex开头的class在实际使用场景中是不必要�
     <fieldset>
         <div class="ui-form-item ui-grid-row-fluid">
             <div class="ui-grid-span2">
-                <label class="ui-form-item-label">Label name</label>
+                <label class="ui-form-item-label-right">Label name</label>
             </div>
             <div class="ui-grid-span8">
                 <input class="ui-form-item-control" type="text" name="" value="">

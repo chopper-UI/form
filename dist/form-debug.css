@@ -28,7 +28,6 @@ input[type="search"],
 input[type="tel"],
 input[type="color"] {
     display: inline-block;
-    height: 30px;
     padding: 4px 6px;
     color: #555555;
     -webkit-border-radius: 4px;
@@ -206,6 +205,40 @@ select:invalid:focus {
     list-style: none;
 }
 
+.ui-form fieldset {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.ui-form input,
+.ui-form select,
+.ui-form textarea{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 30px;
+}
+.ui-form input[type="radio"],
+.ui-form input[type="checkbox"] {
+    height: 14px;
+}
+
+/* 设置textarea */
+.ui-form textarea{
+    height: auto;
+}
+
+/* 设置select */
+.ui-form select,
+.ui-form input[type="file"] {
+    height: 30px;
+}
+.ui-form select[multiple],
+.ui-form select[size] {
+    height: auto;
+}
+
 .ui-form ui-form-legend {
     display: block;
     width: 100%;
@@ -216,19 +249,6 @@ select:invalid:focus {
     color: #333333;
     border: 0;
     border-bottom: 1px solid #e5e5e5;
-}
-
-.ui-form fieldset {
-    padding: 0;
-    margin: 0;
-    border: 0;
-}
-.ui-form input,
-.ui-form select,
-.ui-form textarea{
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
 }
 .ui-form .ui-form-fieldset{
     margin-bottom: 20px;
