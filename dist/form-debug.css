@@ -6,7 +6,6 @@ label,
 input,
 select,
 textarea {
-    font-size: 14px;
     font-weight: normal;
     line-height: 20px;
 }
@@ -29,6 +28,7 @@ input[type="search"],
 input[type="tel"],
 input[type="color"] {
     display: inline-block;
+    height: 30px;
     padding: 4px 6px;
     color: #555555;
     -webkit-border-radius: 4px;
@@ -97,12 +97,13 @@ textarea{
 
 /* 设置select */
 select{
+    margin: 0;
     background-color: #ffffff;
     border: 1px solid #ABABAB;
-    padding: 3px;
 }
 select,
 input[type="file"] {
+    height: 30px;
     line-height: 30px;
 }
 select[multiple],
