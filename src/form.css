@@ -7,6 +7,7 @@ select,
 textarea {
     font-weight: normal;
     line-height: 20px;
+    min-height: 20px;
 }
 
 /* 统一设定input,select,textarea */
@@ -179,23 +180,6 @@ input:invalid, select:invalid {
     box-shadow: none;
 }
 
-/* 选中未通过html5验证的元素时的样式 */
-/*input:focus:invalid,
-textarea:focus:invalid,
-select:focus:invalid {
-    color: #b94a48;
-    border-color: #ee5f5b;
-}*/
-/*input:invalid:focus,
-textarea:invalid:focus,
-select:invalid:focus {
-    border-color: #e9322d;
-    -webkit-box-shadow: 0 0 6px #f8b9b7;
-    -moz-box-shadow: 0 0 6px #f8b9b7;
-    box-shadow: 0 0 6px #f8b9b7;
-}*/
-
-
 .ui-form {
     font-size: 14px;
     line-height: 1.5;
@@ -288,11 +272,11 @@ select:invalid:focus {
 /** block size **/
 input.ui-form-large,
 select.ui-form-large{
-    padding: 14px;
+    height: 50px;
 }
 input.ui-form-medium,
 select.ui-form-medium{
-    padding: 10px;
+    height: 40px;
 }
 input.ui-form-small,
 select.ui-form-small{
