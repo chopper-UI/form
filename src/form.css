@@ -1,32 +1,32 @@
 /* chopper.form 样式模块 */
 
 /* 统一字体大小和行高 */
-label,
-input,
-select,
-textarea {
+.ui-form label,
+.ui-form input,
+.ui-form select,
+.ui-form textarea {
     font-weight: normal;
     line-height: 20px;
     min-height: 20px;
 }
 
 /* 统一设定input,select,textarea */
-select,
-textarea,
-input[type="text"],
-input[type="password"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="date"],
-input[type="month"],
-input[type="time"],
-input[type="week"],
-input[type="number"],
-input[type="email"],
-input[type="url"],
-input[type="search"],
-input[type="tel"],
-input[type="color"] {
+.ui-form select,
+.ui-form textarea,
+.ui-form input[type="text"],
+.ui-form input[type="password"],
+.ui-form input[type="datetime"],
+.ui-form input[type="datetime-local"],
+.ui-form input[type="date"],
+.ui-form input[type="month"],
+.ui-form input[type="time"],
+.ui-form input[type="week"],
+.ui-form input[type="number"],
+.ui-form input[type="email"],
+.ui-form input[type="url"],
+.ui-form input[type="search"],
+.ui-form input[type="tel"],
+.ui-form input[type="color"] {
     display: inline-block;
     padding: 4px 6px;
     color: #555555;
@@ -37,21 +37,21 @@ input[type="color"] {
 }
 
 /* 设置input,textarea的表现形式 */
-textarea,
-input[type="text"],
-input[type="password"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="date"],
-input[type="month"],
-input[type="time"],
-input[type="week"],
-input[type="number"],
-input[type="email"],
-input[type="url"],
-input[type="search"],
-input[type="tel"],
-input[type="color"]{
+.ui-form textarea,
+.ui-form input[type="text"],
+.ui-form input[type="password"],
+.ui-form input[type="datetime"],
+.ui-form input[type="datetime-local"],
+.ui-form input[type="date"],
+.ui-form input[type="month"],
+.ui-form input[type="time"],
+.ui-form input[type="week"],
+.ui-form input[type="number"],
+.ui-form input[type="email"],
+.ui-form input[type="url"],
+.ui-form input[type="search"],
+.ui-form input[type="tel"],
+.ui-form input[type="color"]{
     background-color: #ffffff;
     border: 1px solid #cccccc;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -65,8 +65,8 @@ input[type="color"]{
 }
 
 /* 针对设置radio,checkbox */
-input[type="radio"],
-input[type="checkbox"] {
+.ui-form input[type="radio"],
+.ui-form input[type="checkbox"] {
     line-height: normal;
     height: 14px;
     padding: 0;
@@ -77,85 +77,85 @@ input[type="checkbox"] {
 }
 
 /* 针对设置特殊input */
-input[type="file"],
-input[type="image"],
-input[type="submit"],
-input[type="reset"],
-input[type="button"],
-input[type="radio"],
-input[type="checkbox"] {
+.ui-form input[type="file"],
+.ui-form input[type="image"],
+.ui-form input[type="submit"],
+.ui-form input[type="reset"],
+.ui-form input[type="button"],
+.ui-form input[type="radio"],
+.ui-form input[type="checkbox"] {
     width: auto;
 }
 
 /* 设置textarea */
-textarea{
+.ui-form textarea{
     resize: none;
     height: auto;
     overflow-y: auto;
 }
 
 /* 设置select */
-select{
+.ui-form select{
     margin: 0;
     background-color: #ffffff;
     border: 1px solid #ABABAB;
 }
-select,
-input[type="file"] {
+.ui-form select,
+.ui-form input[type="file"] {
     line-height: 30px;
 }
-select[multiple],
-select[size] {
+.ui-form select[multiple],
+.ui-form select[size] {
     height: auto;
 }
 
 /* 设置placeholder */
-input:-moz-placeholder,
-textarea:-moz-placeholder {
+.ui-form input:-moz-placeholder,
+.ui-form textarea:-moz-placeholder {
     color: #999999;
 }
-input:-ms-input-placeholder,
-textarea:-ms-input-placeholder {
+.ui-form input:-ms-input-placeholder,
+.ui-form :-ms-input-placeholder {
     color: #999999;
 }
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder {
+.ui-form input::-webkit-input-placeholder,
+.ui-form textarea::-webkit-input-placeholder {
     color: #999999;
 }
 
 /* 设置禁用或只读表单元素的样式 */
-input[disabled],
-select[disabled],
-textarea[disabled],
-input[readonly],
-select[readonly],
-textarea[readonly] {
+.ui-form input[disabled],
+.ui-form select[disabled],
+.ui-form textarea[disabled],
+.ui-form input[readonly],
+.ui-form select[readonly],
+.ui-form textarea[readonly] {
     cursor: not-allowed;
     background-color: #eeeeee;
 }
-input[type="radio"][disabled],
-input[type="checkbox"][disabled],
-input[type="radio"][readonly],
-input[type="checkbox"][readonly] {
+.ui-form input[type="radio"][disabled],
+.ui-form input[type="checkbox"][disabled],
+.ui-form input[type="radio"][readonly],
+.ui-form input[type="checkbox"][readonly] {
     background-color: transparent;
 }
 
 /* 表单元素被选中时的样式 */
-textarea:focus,
-input[type="text"]:focus,
-input[type="password"]:focus,
-input[type="datetime"]:focus,
-input[type="datetime-local"]:focus,
-input[type="date"]:focus,
-input[type="month"]:focus,
-input[type="time"]:focus,
-input[type="week"]:focus,
-input[type="number"]:focus,
-input[type="email"]:focus,
-input[type="url"]:focus,
-input[type="search"]:focus,
-input[type="tel"]:focus,
-input[type="color"]:focus {
+.ui-form textarea:focus,
+.ui-form input[type="text"]:focus,
+.ui-form input[type="password"]:focus,
+.ui-form input[type="datetime"]:focus,
+.ui-form input[type="datetime-local"]:focus,
+.ui-form input[type="date"]:focus,
+.ui-form input[type="month"]:focus,
+.ui-form input[type="time"]:focus,
+.ui-form input[type="week"]:focus,
+.ui-form input[type="number"]:focus,
+.ui-form input[type="email"]:focus,
+.ui-form input[type="url"]:focus,
+.ui-form input[type="search"]:focus,
+.ui-form input[type="tel"]:focus,
+.ui-form input[type="color"]:focus {
     border-color: rgba(82, 168, 236, 0.8);
     outline: 0;
     outline: thin dotted \9;
@@ -165,10 +165,10 @@ input[type="color"]:focus {
     -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
     box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
 }
-select:focus,
-input[type="file"]:focus,
-input[type="radio"]:focus,
-input[type="checkbox"]:focus {
+.ui-form select:focus,
+.ui-form input[type="file"]:focus,
+.ui-form input[type="radio"]:focus,
+.ui-form input[type="checkbox"]:focus {
     outline: thin dotted #333;
     outline: 5px auto -webkit-focus-ring-color;
     outline-offset: -2px;
@@ -176,7 +176,7 @@ input[type="checkbox"]:focus {
 
 
 /* 未通过html5验证的元素样式 */
-input:invalid, select:invalid {
+.ui-form input:invalid, select:invalid {
     box-shadow: none;
 }
 
